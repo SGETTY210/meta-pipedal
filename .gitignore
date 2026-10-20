@@ -1,0 +1,15 @@
+# Python compiled files
+*.pyc
+*.pyo
+
+# Editor temporary/swap files
+*.swp
+*~
+
+# Unclean patch leftovers and merge artifacts
+*.orig
+*.rej
+
+# Root level patch files (optional, remove the leading slash if you want to ignore them everywhere)
+/*.patch
+
