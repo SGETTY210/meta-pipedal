@@ -1,0 +1,14 @@
+[Unit]
+Description=PiPedal Admin Service
+After=network.target
+
+[Service]
+ExecStart=/usr/sbin/pipedaladmind -port 3147
+Restart=always
+RestartSec=60
+WorkingDirectory=/var/pipedal
+TimeoutStopSec=15
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target

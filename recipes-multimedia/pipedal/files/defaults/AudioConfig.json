@@ -1,0 +1,14 @@
+{
+  "valid": true,
+  "isOnboarding": false,
+  "rebootRequired": false,
+  "isJackAudio": false,
+  "alsaDevice": "",
+  "alsaInputDevice": "hw:USB",
+  "alsaOutputDevice": "hw:USB",
+  "alsaInputDeviceName": "",
+  "alsaOutputDeviceName": "",
+  "sampleRate": 48000,
+  "bufferSize": 64,
+  "numberOfBuffers": 3
+}

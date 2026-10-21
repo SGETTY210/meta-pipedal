@@ -1,0 +1,15 @@
+{
+  "valid": true,
+  "wifiWarningGiven": true,
+  "rebootRequired": false,
+  "enable": true,
+  "hotspotName": "pipedal",
+  "mdnsName": "pipedal",
+  "hasPassword": true,
+  "password": "pipedalPassword1",
+  "countryCode": "US",
+  "channel": "0",
+  "autoStartMode": 4,
+  "homeNetwork": "",
+  "hasSavedPassword": true
+}

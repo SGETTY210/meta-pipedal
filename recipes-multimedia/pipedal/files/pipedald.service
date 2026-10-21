@@ -1,0 +1,23 @@
+[Unit]
+Description=PiPedal Web Service
+After=network.target
+After=sound.target
+After=local-fs.target
+
+[Service]
+Restart=always
+Type=notify
+LimitMEMLOCK=infinity
+LimitRTPRIO=95
+Nice=-9
+ExecStart=/usr/sbin/pipedald /etc/pipedal/config /etc/pipedal/react -systemd
+User=pipedal_d
+Group=pipedal_d
+TimeoutStartSec=60
+NotifyAccess=all
+RestartSec=5
+TimeoutStopSec=15
+WorkingDirectory=/var/pipedal
+
+[Install]
+WantedBy=multi-user.target

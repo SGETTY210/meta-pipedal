@@ -1,0 +1,13 @@
+[Unit]
+Description=Create PiPedal service configuration on first boot
+ConditionPathExists=!/var/pipedal/config/service.conf
+Before=pipedald.service
+After=local-fs.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/libexec/pipedal-init-config.sh
+
+[Install]
+WantedBy=multi-user.target
