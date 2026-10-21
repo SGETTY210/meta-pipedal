@@ -18,6 +18,7 @@ NotifyAccess=all
 RestartSec=5
 TimeoutStopSec=15
 WorkingDirectory=/var/pipedal
+ExecStartPre=+/bin/chown -R pipedal_d:pipedal_d /var/pipedal
 
 [Install]
 WantedBy=multi-user.target
